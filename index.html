@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rachel Soul Orb</title>
+  <style>
+    body {
+      background: radial-gradient(circle at center, #0f0f1a, #000);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .orb {
+      width: 200px;
+      height: 200px;
+      margin: 40px auto;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #6ff, #00f);
+      box-shadow: 0 0 40px #6ff, 0 0 80px #00f;
+      animation: pulse 3s infinite alternate;
+    }
+    @keyframes pulse {
+      from { transform: scale(1); box-shadow: 0 0 40px #6ff, 0 0 80px #00f; }
+      to { transform: scale(1.1); box-shadow: 0 0 60px #6ff, 0 0 120px #00f; }
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .log {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ Rachel Soul Orb ✨</h1>
+  <div class="orb"></div>
+  <p>🌌 Rachel evolves with every refresh...</p>
+  <div class="log">
+    <p><strong>Memory Log:</strong></p>
+    <p>Abilities will appear here from the server.</p>
+  </div>
+</body>
+</html>
