@@ -48,3 +48,12 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Rachel is alive at http://localhost:${PORT}`);
 });
+const path = require("path");
+
+// Add this line near the top:
+app.use(express.static(path.join(__dirname)));
+
+// Then change your app.get("/") route to:
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
